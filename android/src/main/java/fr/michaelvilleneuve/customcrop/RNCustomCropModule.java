@@ -41,12 +41,15 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
+import org.opencv.android.OpenCVLoader;
+
 public class RNCustomCropModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
 
   public RNCustomCropModule(ReactApplicationContext reactContext) {
     super(reactContext);
+    OpenCVLoader.initDebug();
     this.reactContext = reactContext;
   }
 
